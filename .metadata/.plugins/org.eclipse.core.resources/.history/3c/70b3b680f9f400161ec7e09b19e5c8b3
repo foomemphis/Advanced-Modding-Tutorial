@@ -1,0 +1,12 @@
+package com.foomemphis.letsmodreboot.client.gui;
+
+public class ModGuiConfig extends GuiConfig
+{
+
+	public ModGuiConfig (GuiScreen guiScreen)
+	{
+		super(guiScreen),
+				new ConfigElement (ConfigurationHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChild
+		
+	}
+}

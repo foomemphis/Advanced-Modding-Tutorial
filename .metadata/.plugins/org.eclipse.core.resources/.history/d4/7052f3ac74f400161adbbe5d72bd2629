@@ -1,0 +1,7 @@
+package foomemphis.speedroad;
+
+import net.minecraft.item.Item;
+
+public class ItemSpeedRoad extends Item {
+
+}

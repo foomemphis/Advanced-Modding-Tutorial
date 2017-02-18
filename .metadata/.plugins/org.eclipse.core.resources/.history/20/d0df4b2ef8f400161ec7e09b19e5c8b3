@@ -1,0 +1,8 @@
+package com.foomemphis.letsmodreboot;
+
+import
+
+public class GuiFactory implements IModGuiFactory
+{
+
+}

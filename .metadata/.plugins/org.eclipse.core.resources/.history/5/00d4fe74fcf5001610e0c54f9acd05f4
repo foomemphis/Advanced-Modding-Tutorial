@@ -1,0 +1,19 @@
+package com.foomemphis.letsmodreboot.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockLMRB extends Block
+{
+
+	public BlockLMRB(Material material)
+	{
+		super(material);
+	}
+
+	public BlockLMRB()
+	{
+		this(Material.rock);
+	}
+	
+}

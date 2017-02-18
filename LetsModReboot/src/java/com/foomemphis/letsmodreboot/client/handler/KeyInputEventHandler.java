@@ -1,0 +1,37 @@
+package com.foomemphis.letsmodreboot.client.handler;
+
+import com.foomemphis.letsmodreboot.client.settings.Keybindings;
+import com.foomemphis.letsmodreboot.reference.Key;
+import com.foomemphis.letsmodreboot.utility.LogHelper;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.InputEvent;
+
+public class KeyInputEventHandler
+{
+	private static Key getPressedKeybinding()
+	{
+		// wird ausgeführt wenn ein Key gedrückt wird und gibt zurück welche Funktion damit ausgelöst werden soll
+		// (kann nicht einfach auf key abgestellt werden, sonst würde bei einer Tastenumbelegung mist rumkommen)
+		if (Keybindings.charge.isPressed())
+		{
+			return Key.CHARGE;
+		}
+		// wird ein Key gedrückt der Charge auslösen soll gib die Info an uns weiter
+		else if (Keybindings.release.isPressed())
+		{
+			return Key.RELEASE;
+		}
+		// wird ein Key gedrückt der Release auslösen soll gib die Info an uns weiter
+		return Key.UNKNOWN;
+		// wenn wir nichts mit dem Key anfangen können dann Unknown funktion
+	}
+	
+	@SubscribeEvent
+	public void handleKeyInputEvent(InputEvent.KeyInputEvent event)
+	{
+		// when a key is pressed it will execute this Function
+		// KeyInputEvent extends InputEvent gibt sonst keine Infos
+		LogHelper.info(getPressedKeybinding());
+	}
+}

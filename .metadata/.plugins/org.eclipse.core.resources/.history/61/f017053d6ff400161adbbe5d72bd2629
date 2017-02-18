@@ -1,0 +1,6 @@
+package com.foomemphis.letsmodreboot;
+
+@Mod(modid="letsmodreboot",name="Lets Mod Reboot",version="1.7.10-1.0")
+public class LetsModReboot {
+
+}

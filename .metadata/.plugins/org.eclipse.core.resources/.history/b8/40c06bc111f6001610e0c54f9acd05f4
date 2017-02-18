@@ -1,0 +1,9 @@
+package com.foomemphis.letsmodreboot.init;
+
+public class Recipes
+{
+	public static void init()
+	{
+		
+	}
+}

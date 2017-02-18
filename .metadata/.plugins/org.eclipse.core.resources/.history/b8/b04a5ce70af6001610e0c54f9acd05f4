@@ -1,0 +1,16 @@
+package com.foomemphis.letsmodreboot.item;
+
+import com.foomemphis.letsmodreboot.creativetab.CreativeTabLMRB;
+
+// Pahimar is Canadian! :D
+
+public class ItemMapleLeaf extends ItemLMRB
+{
+	public ItemMapleLeaf()
+	{
+		super();
+		this.setUnlocalizedName("mapleLeaf");
+		this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
+	}
+
+}

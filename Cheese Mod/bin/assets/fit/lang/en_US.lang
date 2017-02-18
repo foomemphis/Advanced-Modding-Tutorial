@@ -1,0 +1,22 @@
+item.itemTable.name=Table
+
+item.itemCheese.name=Cheese
+item.itemGrilledCheese.name=Grilled Cheese
+item.itemBacon.name=Bacon
+item.itemGrilledBacon.name=Grilled Bacon
+
+item.CheesePickaxe.name=Cheese Pickaxe
+item.CheeseAxe.name=Cheese Axe
+item.CheeseSpade.name=Cheese Shovel
+item.CheeseSword.name=Cheese Sword
+item.CheeseHoe.name=Cheese Hoe
+
+item.CheeseHelmet.name=Cheese Helmet
+item.CheeseChestplate.name=Cheese Chestplate
+item.CheeseLeggings.name=Cheese Leggings
+item.CheeseBoots.name=Cheese Boots
+
+
+tile.BlockTable.name=Table
+
+itemGroup.tabTutorialMod=Tutorial Mod

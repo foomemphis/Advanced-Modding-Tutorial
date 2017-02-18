@@ -1,0 +1,13 @@
+package com.foomemphis.letsmodreboot.block;
+
+import com.foomemphis.letsmodreboot.creativetab.CreativeTabLMRB;
+
+public class BlockFlag extends BlockLMRB
+{
+	public BlockFlag()
+	{
+		super();
+		this.setBlockName("flag");
+		this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
+	}
+}

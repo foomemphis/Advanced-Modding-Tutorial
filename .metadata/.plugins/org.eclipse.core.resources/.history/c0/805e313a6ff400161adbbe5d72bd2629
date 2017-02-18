@@ -1,0 +1,7 @@
+package com.foomemphis.advancedmod;
+
+
+@Mod(modid="advancedmod",name="Advanced Mod",version="1.7.10-1.0")
+public class AdvancedMod {
+
+}

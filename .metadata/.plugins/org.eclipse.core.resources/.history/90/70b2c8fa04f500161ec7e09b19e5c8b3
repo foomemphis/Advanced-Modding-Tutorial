@@ -1,0 +1,11 @@
+package com.foomemphis.letsmodreboot.item;
+
+import net.minecraft.item.Item;
+
+public class ItemLMRB extends Item
+{
+	public ItemLRMB()
+	{
+		super();
+	}
+}

@@ -1,0 +1,6 @@
+package com.foomemphis.letsmodreboot.client.handler;
+
+public class KeyInputEventHandler
+{
+
+}

@@ -1,0 +1,6 @@
+item.itemSpeedRoad.name=Baked Speed Road
+item.itemRoad.name=Unbaked Road
+
+tile.BlockSpeedRoad.name=Speed Road
+
+itemGroup.tabSpeedRoadMod=Speed Road Mod

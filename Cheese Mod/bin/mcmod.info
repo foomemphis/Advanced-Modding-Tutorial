@@ -1,0 +1,16 @@
+[
+{
+  "modid": "speed",
+  "name": "Speed Road Mod",
+  "description": "My Way or the Highway - by foomemphis",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [foomemphis],
+  "credits": "Thanks to MrCrayfish for making that possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

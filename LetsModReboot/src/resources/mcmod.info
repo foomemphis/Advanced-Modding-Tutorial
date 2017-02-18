@@ -1,0 +1,16 @@
+[
+{
+  "modid": "letsmodreboot",
+  "name": "Lets Mod Reboot",
+  "description": "Lets Mod Reboot Tutorial - by foomemphis",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [foomemphis],
+  "credits": "Thanks to Pahimar for making that possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

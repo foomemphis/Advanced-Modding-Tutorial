@@ -1,0 +1,6 @@
+package com.foomemphis.letsmodreboot.client.gui;
+
+public class ModGuiConfig extends Gui
+{
+
+}

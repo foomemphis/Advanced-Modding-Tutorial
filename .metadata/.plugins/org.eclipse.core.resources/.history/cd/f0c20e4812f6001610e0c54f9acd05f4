@@ -1,0 +1,37 @@
+package com.foomemphis.letsmodreboot.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
+
+public class Recipes
+{
+	public static void init()
+	{
+		// Vanilla Shaped 
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.mapleLeaf), " s ", "sss"," s ",'s', new ItemStack(Items.stick));
+		// .addRecipe bedeutet immer Shaped "Standard"
+		// erster Parameter ist der Output 
+		// danach jede einzelne Zeile:
+		// 1. Reihe " s " Craftingfenster obere Reihe
+		// 2. Reihe "sss" Craftingfenster mittlere Reihe
+		// 3. Reihe " s " Craftingfenster untere Reihe
+		// danach wofür steht der zugewiesene Buchstabe
+		// 's' Zuweisung das in DIESEM (!!) Rezept "s" für einen Vanilla Stick steht
+		// Leerzeichen steht für ein leeres Feld im Craftingfenster
+		
+		// Vanilla Shapeless
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.flag), new ItemStack(ModItems.mapleLeaf), new ItemStack(ModItems.mapleLeaf));
+		// anderer Aufbau als bei Shaped, denn die Anordnung ist nicht von belang
+		// zuerst Output
+		// danach Einträge für die möglichen Inputs
+		
+		// Shaped Ore Recipe
+		GameRegistry.addRecipe(new ShapedOreRecipe());
+				
+		// Shapeless Ore Recipe
+		GameRegistry.addRecipe(new ShapelessOreRecipe());
+	}
+}
