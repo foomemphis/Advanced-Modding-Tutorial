@@ -8,6 +8,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+import com.foomemphis.advancedmod.init.ModBlocks;
 import com.foomemphis.advancedmod.proxy.CommonProxy;
 import com.foomemphis.advancedmod.reference.Reference;
 import com.foomemphis.advancedmod.utility.Log;
@@ -29,6 +30,7 @@ public class Main
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		ModBlocks.init();
 		proxy.preInit();
 		Log.info("Pre Initialization Complete!");
 	}
