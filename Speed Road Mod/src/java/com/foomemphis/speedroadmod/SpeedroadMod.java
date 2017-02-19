@@ -23,6 +23,7 @@ public class SpeedroadMod {
 	public static Item itemRoad;
 	
 	public static Block blockSpeedRoad;
+	public static Block blockStairSpeedRoad;
 	
 	
 	
@@ -47,7 +48,7 @@ public class SpeedroadMod {
 		//cheesePickaxe = new ItemCheesePickaxe(cheeseToolMaterial).setUnlocalizedName("CheesePickaxe").setTextureName("fit:itemcheesepickaxe").setCreativeTab(tabTutorialMod);
 		
 		blockSpeedRoad = new BlockSpeedRoad(Material.ground).setBlockName("BlockSpeedRoad").setBlockTextureName("speed:blockspeedroad").setCreativeTab(tabSpeedRoadMod);
-		
+		blockStairSpeedRoad = new StairSpeedRoad(Material.ground).setBlockName("BlockStairSpeedRoad").setBlockTextureName("speed:blockstairspeedroad").setCreativeTab(tabSpeedRoadMod);
 		
 		//armor
 		//cheeseHelmet = new ItemCheeseArmor(cheeseArmorMaterial, 0, 0).setUnlocalizedName("CheeseHelmet").setTextureName("fit:itemcheesehelmet").setCreativeTab(tabTutorialMod);
@@ -63,6 +64,7 @@ public class SpeedroadMod {
 		//GameRegistry Bereich
 		
 		GameRegistry.registerBlock(blockSpeedRoad, blockSpeedRoad.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(blockStairSpeedRoad, blockStairSpeedRoad.getUnlocalizedName().substring(5));
 		
 		GameRegistry.registerItem(itemSpeedRoad,itemSpeedRoad.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(itemRoad, itemRoad.getUnlocalizedName().substring(5));
@@ -93,7 +95,9 @@ public class SpeedroadMod {
 		//dadurch lässt sich das Rezept überall herstellen, nicht nur in der Mitte des Craftingtables
 
 		GameRegistry.addRecipe(new ItemStack(itemRoad, 2), new Object[]{"CC","GG",'C', Items.clay_ball, 'G', Blocks.gravel});
+		
 		GameRegistry.addRecipe(new ItemStack(blockSpeedRoad, 4), new Object[]{"II","II",'I', (itemSpeedRoad)});
+		GameRegistry.addRecipe(new ItemStack(blockStairSpeedRoad, 8), new Object[]{"I  ","II ","III",'I', (itemSpeedRoad)});
 		
 		
 	}
